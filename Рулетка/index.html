@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>The Alcohol Roulette</title>
+		<meta name="description" content="We are to help you to choose your perfect drink for today!">
+		<meta name="author" content="AKM">
+		<link rel="stylesheet" href="mainStyle.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:200,400" rel="stylesheet">
+		<script type="text/javascript">
+			var looper;
+			var degrees = 0;
+			function rotateAnimation(el, speed){
+				var elem = document.getElementById(el);
+				elem.style.transform = "rotate("+degrees+"deg)";
+				looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
+				degrees++;
+				if (degrees > 359) {
+					degrees = 1;
+				}
+				document.getElementById("status").innerHTML = "rotate("+degrees+"deg)";
+			}
+		</script>
+	</head>
+
+	<body>
+		<header>
+			<a href="#"><p class="headerMenu">Menu</p></a>
+			<h1>Choose your path</h1>
+			<a href="loginRegister.html"><p class="headerMenu">Log In</p></a> <!-- if(logIn == false){ <p>register</p> } -->
+		</header>
+
+
+
+		<p class="image"><img id="img1" src="roulette.png" height="400" width="400"></p>
+		<p class="image"><img src="arrow.png" height="80" width="80"></p>
+
+
+
+
+		<script>
+			rotateAnimation("img1", 10);
+		</script>
+	</body>
+
+</html>

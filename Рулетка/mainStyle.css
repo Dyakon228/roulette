@@ -1,0 +1,52 @@
+body{
+	width: 75%;
+	margin-left: 12%;
+	font-family: 'Raleway', sans-serif;
+	margin-top: 0;
+}
+header{
+	background-color: black;
+	height: 100px;
+	color: white;
+	text-align: center;
+	margin-top: 0;
+}
+h1{
+	padding-top: 10px;
+	float: left;
+	text-align: center;
+	font-weight: lighter;
+	padding-left: 30%;
+	padding-right: 30%;
+}
+
+.headerMenu{
+	float: left;
+	padding-top: 25px;
+	padding-left: 20px;
+}
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+/* selected link */
+a:active {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.image{
+	text-align: center;
+}
